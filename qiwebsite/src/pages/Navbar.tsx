@@ -1,35 +1,34 @@
-
-
-
 /*
-
-In this script we make a reusable navigation bar component
-This will be at the top of the page 
-
+COMPONENT DEFINITION SCRIPT FOR NAVBAR
+In this script we make a reusable navigation bar component.
+This will be at the top of the page.
 */
+
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "/calculator.svg";
 
 export default function NavBar() {
+  // to track if the navbar is open or closed
   const [expanded, setExpanded] = useState(false);
 
   return (
     <Navbar
       expanded={expanded}
       expand="md"
-      bg="dark"
-      variant="dark"
+      bg="dark"       // always solid background
+      variant="dark"  // text colors fit the dark background
       fixed="top"
       className="shadow-sm"
     >
       <Container>
         {/* Brand / Logo */}
-        <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
-          MySite
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
 
-        {/* Hamburger button */}
+        {/* Mobile toggle button */}
         <Navbar.Toggle
           aria-controls="main-navbar"
           onClick={() => setExpanded(expanded ? false : true)}

@@ -10,7 +10,4 @@ export default function Projects() {
             </ul>        
         </div>
     )
-
-
-
 }
