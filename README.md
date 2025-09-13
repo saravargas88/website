@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="/icons/BlueBird.png" alt="Logo" width="80" height="80">
+    <img src="website/qiwebsite/public/icons/BlueBird.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
