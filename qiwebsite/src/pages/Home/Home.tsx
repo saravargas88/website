@@ -17,7 +17,7 @@ export default function Home() {
           />
 
 
-          <p>Contact me at : <a href="mailto:ql2221@nyu.edu">ql2221@nyu.edu</a></p>
+          
         </Col>
         
         {/* Bio */}
