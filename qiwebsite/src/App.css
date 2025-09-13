@@ -1,34 +1,84 @@
+/* =============================
+   Base / Global Styles
+============================= */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  padding-top: 65px; /* offset for fixed navbar */
+}
+
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-
-body {
-  padding-top: 65px
+/* =============================
+   Typography
+============================= */
+.read-the-docs {
+  color: #888;
 }
+
+/* =============================
+   App Layout
+============================= */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1; /* pushes footer down */
+}
+
+main {
+  flex: 1;
+}
+
+/* =============================
+   Navbar
+============================= */
+.navbar {
+  height: 65px;       /* slim navbar */
+  padding: 0 1rem;
+}
+
+.navbar-brand img.logo {
+  height: 40px;
+  width: auto;        /* maintain aspect ratio */
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* =============================
+   Logo
+============================= */
 .logo {
   height: 2em;
   padding: 1em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, transform 0.3s ease; /* smooth hover scale */
 }
 
 .logo:hover {
+  transform: scale(1.2); /* grow on hover */
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Optional: spinning logo animation */
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,94 +87,58 @@ body {
   }
 }
 
+/* =============================
+   Cards / Projects
+============================= */
 .card {
   padding: 2em;
 }
-
-.read-the-docs {
-  color: #888;
+.project-card {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App {
-  flex: 1; /* pushes footer down */
+.project-card:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  border-color: #0d6efd;
 }
 
+.project-img {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+  border-color: #0d6efd;
+}
+
+/* =============================
+   Footer
+============================= */
 .footer {
   margin-top: auto;
-  background-color: #212529; /* matches bg-dark */
-  color: white;
-  padding: 2rem 0; /* make it taller */
-}
-
-/* Navbar size */
-.navbar {
-  height: 65px;              /* keep navbar slim */
-  padding: 0 1rem;           /* adjust horizontal padding */
-}
-
-.navbar-brand img.logo {
-  height: 40px;            /* increase logo height */
-  width: auto;             /* maintain aspect ratio */
-  padding: 0;              /* remove extra space around it */
-}
-/* Optional: make links align better */
-.navbar-nav .nav-link {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.footer {
-  background-color: #f8f9fa;  /* light background */
+  width: 100%;                  /* full width footer */
+  background-color: #f8f9fa;
   padding: 15px 0;
-  border-top: 1px solid #dee2e6; /* subtle separation line */
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  color: #6c757d;
 }
 
 .footer .icon-link {
-  color: #6c757d;   /* muted gray icons */
+  color: #6c757d;
   font-size: 1.4rem;
   margin: 0 12px;
   transition: color 0.3s ease;
 }
 
 .footer .icon-link:hover {
-  color: #0d6efd;   /* Bootstrap primary blue on hover */
+  color: #0d6efd;
 }
 
 .footer small {
   font-size: 0.85rem;
-  color: #6c757d;   /* muted text */
-}
-
-.project-card img {
-  height: 200px;         /* all images same height */
-  object-fit: cover;     /* crop edges if aspect ratio differs */
-  width: 100%;           /* fill card width */
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;          /* force equal card heights */
-}
-
-.project-card .card-body {
-  flex-grow: 1;          /* makes content stretch evenly */
-}
-
-
-/* Ensure the whole page takes full height */
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
-
-/* App container should use flexbox layout */
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Main content expands to fill space */
-main {
-  flex: 1;
+  color: #6c757d;
 }

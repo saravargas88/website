@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import resumePDF from "/resume.pdf"
@@ -10,7 +9,6 @@ export default function Resume() {
       <Row className="align-items-center justify-content-center">
         <Col xs={12} md={8} className="text-center">
           <h1>Resume</h1>
-          <p>This is my resume page.</p>
 
           {/* PDF preview */}
           <iframe

@@ -8,7 +8,7 @@ COMPONENT DEFINITION SCRIPT FOR NAVBAR:
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "qiwebsite/public/icons/BlueBird.svg";
+import logo from "/icons/BlueBird.svg";
 
 export default function NavBar() {
   const [expanded, setExpanded] = useState(false);
