@@ -1,13 +1,27 @@
 
+
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import resumePDF from "/resume.pdf"
+
 export default function Resume() {
   return (
-    <div>
-      <section id="resume">
-        <h1>Resume</h1>
-        <p>
-          This is my resume page.
-        </p>
-      </section>
-    </div>
-  )
+    <Container fluid className="my-5">
+      <Row className="align-items-center justify-content-center">
+        <Col xs={12} md={8} className="text-center">
+          <h1>Resume</h1>
+          <p>This is my resume page.</p>
+
+          {/* PDF preview */}
+          <iframe
+            src={resumePDF}
+            width="100%"
+            height="600px"
+            style={{ border: "none" }}
+            title="Resume PDF"
+          />
+        </Col>
+      </Row>
+    </Container>
+  );
 }

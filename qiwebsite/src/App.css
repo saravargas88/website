@@ -1,16 +1,20 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+
+body {
+  padding-top: 65px
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 2em;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -39,4 +43,88 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.App {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #212529; /* matches bg-dark */
+  color: white;
+  padding: 2rem 0; /* make it taller */
+}
+
+/* Navbar size */
+.navbar {
+  height: 65px;              /* keep navbar slim */
+  padding: 0 1rem;           /* adjust horizontal padding */
+}
+
+.navbar-brand img.logo {
+  height: 40px;            /* increase logo height */
+  width: auto;             /* maintain aspect ratio */
+  padding: 0;              /* remove extra space around it */
+}
+/* Optional: make links align better */
+.navbar-nav .nav-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer {
+  background-color: #f8f9fa;  /* light background */
+  padding: 15px 0;
+  border-top: 1px solid #dee2e6; /* subtle separation line */
+}
+
+.footer .icon-link {
+  color: #6c757d;   /* muted gray icons */
+  font-size: 1.4rem;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.footer .icon-link:hover {
+  color: #0d6efd;   /* Bootstrap primary blue on hover */
+}
+
+.footer small {
+  font-size: 0.85rem;
+  color: #6c757d;   /* muted text */
+}
+
+.project-card img {
+  height: 200px;         /* all images same height */
+  object-fit: cover;     /* crop edges if aspect ratio differs */
+  width: 100%;           /* fill card width */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;          /* force equal card heights */
+}
+
+.project-card .card-body {
+  flex-grow: 1;          /* makes content stretch evenly */
+}
+
+
+/* Ensure the whole page takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* App container should use flexbox layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content expands to fill space */
+main {
+  flex: 1;
 }

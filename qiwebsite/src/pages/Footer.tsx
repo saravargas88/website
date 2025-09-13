@@ -1,51 +1,54 @@
+/*
+Component defintino script for FOOTER: 
+- contains links to social media and copyright info
+- will be at the bottom of the page
+
+*/
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-export default function Footer(){
-   let date = new Date();
-    let year = date.getFullYear();
 
-    return(
-        <Container fluid className="footer">
+export default function Footer() {
+  let date = new Date();
+  let year = date.getFullYear();
 
-         <Row>
-            <Col md={4} className="footer-copywright">
-                <h3>Designed and Developed by Sara Vargas</h3>
-            </Col>
-            <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+  return (
+    <footer className="bg-light text-muted py-3">
+      <Container>
+        <Row className="align-items-center">
+          {/* Left side - Designer info */}
+          <Col md={4} className="text-start">
+            <small>Designed and Developed by Sara Vargas</small>
+          </Col>
 
+          {/* Center - Copyright */}
+          <Col md={4} className="text-center">
+            <small>Copyright © {year} SV</small>
+          </Col>
 
-            <li className="social-icons">
-              <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-
-            
-            <li className="social-icons">
-              <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-        
-            
-          </ul>
-        </Col>
-      </Row>
-    </Container>
-    )
-    
+          {/* Right side - Social icons */}
+          <Col md={4} className="text-end">
+            <a
+              href="https://github.com/QiLiu6"
+              className="text-muted me-3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillGithub size={20} />
+            </a>
+            <a
+              href="https://linkedin.com/"
+              className="text-muted"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
 }
