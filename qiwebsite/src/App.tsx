@@ -11,8 +11,8 @@ App.tsx
 
 
 import './App.css'
-import {BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom'
-import React , {useState, useEffect, use} from 'react'
+import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+
 
 //design bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";

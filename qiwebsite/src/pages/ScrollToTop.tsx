@@ -7,8 +7,6 @@ COmponent definition script for scrolling to the top when navigating page
 
 */
 
-
-
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
