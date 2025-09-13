@@ -9,13 +9,13 @@ export default function Projects() {
     {
       title: "Thermalizer Project",
       description: "Stabilizing autoregressive emulators with diffusion-based thermalization, enabling reliable long-horizon predictions in chaotic spatiotemporal systems.",
-      imgSrc: "public/thumbnails/thermalizerpic.png",   // your own image
+      imgSrc: "/thumbnails/thermalizerpic.png",   // your own image
       link: "https://arxiv.org/abs/2503.18731"
     },
     {
       title: " Thesis: Factors Driving the Variability of the Southern Hemisphere Baroclinic",
       description: "Analyzing the Southern Hemisphere Baroclinic Annular Mode using reanalysis data and numerical modeling. Identifying its dynamics and evaluating its impacts on regional climate variability.",
-      imgSrc: "public/thumbnails/thesispic.png",
+      imgSrc: "/thumbnails/thesispic.png",
       link: "https://github.com/QiLiu6/UG_thesis/tree/main"
     },
    
