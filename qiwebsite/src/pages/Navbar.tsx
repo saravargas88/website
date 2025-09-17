@@ -21,6 +21,7 @@ export default function NavBar() {
       variant="dark"
       fixed="top"
       className="shadow-sm"
+      backdrop="blur"
     >
       <Container>
         {/* Brand / Logo */}
