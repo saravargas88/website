@@ -43,9 +43,14 @@ main {
 .navbar {
   height: 65px;       /* slim navbar */
   padding: 0 1rem;
-  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+ 
 }
 
+.expanded-menu {
+  background-color: rgba(19, 19, 42, 0.853);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 .navbar-brand img.logo {
   height: 40px;
   width: auto;        /* maintain aspect ratio */

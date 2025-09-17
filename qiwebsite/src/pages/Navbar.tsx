@@ -1,10 +1,3 @@
-/*
-COMPONENT DEFINITION SCRIPT FOR NAVBAR: 
-
-- In this script we make a reusable navigation bar component.
-- This will be at the top of the page.
-- This includes links to other pages like Projects and Resume and soon Publications !!!
-*/
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -21,23 +14,28 @@ export default function NavBar() {
       variant="dark"
       fixed="top"
       className="shadow-sm"
-      backdrop="blur"
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.85)",
+      }}
     >
       <Container>
         {/* Brand / Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img src={logo} className="img-fluid logo" alt="brand" />
-          <span className="ms-2">    Qi Liu</span>
+          <span className="ms-2">Qi Liu</span>
         </Navbar.Brand>
 
-        {/* Built-in toggle */}
+        {/* Toggle */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(expanded ? false : true)}
         />
 
         {/* Links */}
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className={expanded ? "expanded-menu" : ""}
+        >
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
               Home
