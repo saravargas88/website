@@ -24,16 +24,16 @@ export default function Home() {
         <Col xs={12} md={6} className="text-center text-md-start">
           <h1 className="fw-bold">Qi Liu </h1>
           <p className="lead">
-            Prospective PhD Student at NYU Courant Instutute of Mathematical Sciences 
+            First-year PhD Student at NYU Courant Instutute of Mathematical Sciences 
           </p>
 
           <p>
            I'm a first year student in the <a href=  "https://caos.cims.nyu.edu/dynamic/phd-program/overview/"> PhD in Atmosphere Ocean Science and Mathematics</a> program at NYU Courant Institute of Mathematical Sciences, where I am 
-           advided by  <a href= "https://cims.nyu.edu/~bruna/"> Joan Bruna </a>  and <a href= "https://zanna-researchteam.github.io/author/laure-zanna//"></a>Laure Zanna. 
+           advised by  <a href= "https://cims.nyu.edu/~bruna/"> Joan Bruna </a>  and <a href= "https://zanna-researchteam.github.io/author/laure-zanna/">Laure Zanna</a>. 
           </p>
 
           <p>
-          My research interest lies in the intersection of machine learning, dynamical systems and climate science. I pursue I am part of the <a href= "https://m2lines.github.io/" > M2Lines Project</a>. 
+              My research interests lie in PDE's and machine learning for climate sciences.  I am part of the <a href= "https://m2lines.github.io/" > M2Lines Project</a>. 
           </p>
         </Col>
 
