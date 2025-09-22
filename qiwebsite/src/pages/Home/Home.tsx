@@ -24,7 +24,7 @@ export default function Home() {
         <Col xs={12} md={6} className="text-center text-md-start">
           <h1 className="fw-bold">Qi Liu </h1>
           <p className="lead">
-            First-year PhD Student at NYU Courant Instutute of Mathematical Sciences 
+            First-year PhD Student at NYU Courant Institute of Mathematical Sciences 
           </p>
 
           <p>
